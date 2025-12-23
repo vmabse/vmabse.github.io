@@ -1,1 +1,268 @@
-Test page
+<!DOCTYPE html>
+<html lang="sv" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vagn & Maskin i Norden AB - Transport & Logistik</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        vm: {
+                            blue: '#0f172a', // Deep navy
+                            accent: '#f59e0b', // Amber/Orange
+                            light: '#f1f5f9',
+                            dark: '#1e293b'
+                        }
+                    },
+                    fontFamily: {
+                        heading: ['Oswald', 'sans-serif'],
+                        body: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-pattern {
+            background-color: #0f172a;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%231e293b' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="font-body text-slate-800 antialiased bg-slate-50">
+
+    <!-- Navigation -->
+    <nav class="bg-vm-blue text-white fixed w-full z-50 shadow-lg bg-opacity-95 backdrop-blur-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <div class="w-10 h-10 bg-vm-accent rounded flex items-center justify-center font-heading font-bold text-vm-blue text-xl">VM</div>
+                    <span class="font-heading font-bold text-xl tracking-wider uppercase">Vagn & Maskin</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#hem" class="hover:text-vm-accent transition-colors font-medium">Hem</a>
+                    <a href="#tjanster" class="hover:text-vm-accent transition-colors font-medium">Tjänster</a>
+                    <a href="#om-oss" class="hover:text-vm-accent transition-colors font-medium">Om oss</a>
+                    <a href="#kontakt" class="px-4 py-2 bg-vm-accent text-vm-blue rounded font-bold hover:bg-yellow-400 transition-colors uppercase text-sm tracking-wide">Kontakta oss</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hem" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1586155638764-bf045442f6f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Logistikcenter" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-vm-blue opacity-80 mix-blend-multiply"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-4 max-w-5xl mx-auto">
+            <span class="block text-vm-accent font-heading font-bold tracking-[0.2em] uppercase mb-4 animate-fade-in-up">Vagn & Maskin i Norden AB</span>
+            <h1 class="text-5xl md:text-7xl font-heading font-bold text-white mb-6 leading-tight">
+                Heltäckande <span class="text-transparent bg-clip-text bg-gradient-to-r from-vm-accent to-yellow-200">Transportleverantör</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed">
+                Vi är er partner för transport, logistik och tungverkstad. Vi utgår från Linköping men arbetar över hela Sverige.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#tjanster" class="px-8 py-4 bg-vm-accent text-vm-blue font-heading font-bold text-lg rounded hover:bg-yellow-400 transition-all transform hover:-translate-y-1 shadow-lg shadow-yellow-500/20 uppercase tracking-wider">
+                    Våra Tjänster
+                </a>
+                <a href="#kontakt" class="px-8 py-4 border-2 border-white text-white font-heading font-bold text-lg rounded hover:bg-white hover:text-vm-blue transition-all transform hover:-translate-y-1 uppercase tracking-wider">
+                    Kontakta Oss
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="tjanster" class="py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-vm-accent font-bold tracking-widest uppercase mb-2 text-sm">Vad vi gör</h2>
+                <h3 class="text-4xl md:text-5xl font-heading font-bold text-vm-blue">Våra Verksamhetsområden</h3>
+                <div class="w-24 h-1 bg-vm-accent mx-auto mt-6"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-10">
+                <!-- Service 1 -->
+                <div class="group bg-slate-50 p-8 rounded-xl shadow-sm hover:shadow-xl transition-all border border-slate-100 hover:border-vm-accent/30 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                        <svg class="w-24 h-24" fill="currentColor" viewBox="0 0 20 20"><path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/><path d="M3 4a1 1 0 00-1 1v10a1 1 0 001 1h1.05a2.5 2.5 0 014.9 0H10a1 1 0 001-1V5a1 1 0 00-1-1H3zM14 7a1 1 0 00-1 1v6.05A2.5 2.5 0 0115.95 16H17a1 1 0 001-1v-5a1 1 0 00-.293-.707l-2-2A1 1 0 0015 7h-1z"/></svg>
+                    </div>
+                    <div class="w-14 h-14 bg-vm-blue text-white rounded-lg flex items-center justify-center mb-6 text-2xl group-hover:bg-vm-accent group-hover:text-vm-blue transition-colors">
+                        🚛
+                    </div>
+                    <h4 class="text-2xl font-heading font-bold text-vm-blue mb-4">Transport</h4>
+                    <p class="text-slate-600 leading-relaxed">
+                        Pålitliga transportlösningar för alla typer av gods. Vi hanterar allt från lokala leveranser till tunga transporter över hela Norden.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="group bg-slate-50 p-8 rounded-xl shadow-sm hover:shadow-xl transition-all border border-slate-100 hover:border-vm-accent/30 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                        <svg class="w-24 h-24" fill="currentColor" viewBox="0 0 20 20"><path d="M4 3a2 2 0 100 4h12a2 2 0 100-4H4z"/><path fill-rule="evenodd" d="M3 8h14v7a2 2 0 01-2 2H5a2 2 0 01-2-2V8zm5 3a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z" clip-rule="evenodd"/></svg>
+                    </div>
+                    <div class="w-14 h-14 bg-vm-blue text-white rounded-lg flex items-center justify-center mb-6 text-2xl group-hover:bg-vm-accent group-hover:text-vm-blue transition-colors">
+                        📦
+                    </div>
+                    <h4 class="text-2xl font-heading font-bold text-vm-blue mb-4">Logistik</h4>
+                    <p class="text-slate-600 leading-relaxed">
+                        Effektiva logistikflöden anpassade efter era behov. Vi optimerar lagerhållning och distribution för maximal effektivitet.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="group bg-slate-50 p-8 rounded-xl shadow-sm hover:shadow-xl transition-all border border-slate-100 hover:border-vm-accent/30 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                        <svg class="w-24 h-24" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"/></svg>
+                    </div>
+                    <div class="w-14 h-14 bg-vm-blue text-white rounded-lg flex items-center justify-center mb-6 text-2xl group-hover:bg-vm-accent group-hover:text-vm-blue transition-colors">
+                        🔧
+                    </div>
+                    <h4 class="text-2xl font-heading font-bold text-vm-blue mb-4">Tungverkstad</h4>
+                    <p class="text-slate-600 leading-relaxed">
+                        Fullserviceverkstad för tunga fordon. Vår expertis garanterar att er flotta rullar säkert och effektivt på vägarna.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="om-oss" class="py-24 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="relative">
+                    <div class="absolute -top-4 -left-4 w-24 h-24 bg-vm-accent/20 rounded-full blur-2xl"></div>
+                    <img src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Vagn & Maskin Team" class="relative rounded-lg shadow-2xl z-10">
+                    <div class="absolute -bottom-6 -right-6 w-48 h-48 bg-vm-blue rounded-lg -z-0"></div>
+                </div>
+                <div>
+                    <h2 class="text-vm-accent font-bold tracking-widest uppercase mb-2 text-sm">Om Vagn & Maskin</h2>
+                    <h3 class="text-4xl font-heading font-bold text-vm-blue mb-6">Kvalitet och Engagemang i Varje Uppdrag</h3>
+                    <p class="text-slate-700 text-lg mb-6 leading-relaxed">
+                        Vagn & Maskin i Norden AB är en pålitlig leverantör av transporttjänster som utgår från Linköping men jobbar runt om i hela Sverige. Verksamheten är inriktad på att stödja kundernas verksamheter genom att alltid sätta deras behov i första rummet.
+                    </p>
+                    <p class="text-slate-600 mb-8 leading-relaxed">
+                        Med en kompetent arbetsstyrka på 14 personer kan vi hantera alla typer av frakt- och transportbehov, samt ge expertis inom service för tunga fordon. Vi är stolta över våra medarbetare som är dedikerade och engagerade i att leverera den bästa servicen till våra kunder.
+                    </p>
+                    <ul class="space-y-4 font-heading text-lg text-vm-blue font-medium">
+                        <li class="flex items-center gap-3">
+                            <span class="w-6 h-6 rounded-full bg-vm-accent flex items-center justify-center text-xs text-vm-blue">✓</span>
+                            Hela Sverige som arbetsfält
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="w-6 h-6 rounded-full bg-vm-accent flex items-center justify-center text-xs text-vm-blue">✓</span>
+                            14 kvalificerade medarbetare
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="w-6 h-6 rounded-full bg-vm-accent flex items-center justify-center text-xs text-vm-blue">✓</span>
+                            Expertis inom tung fordonsservice
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="kontakt" class="py-24 bg-vm-blue text-white relative hero-pattern">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid md:grid-cols-2 gap-16">
+                <div>
+                    <h2 class="text-vm-accent font-bold tracking-widest uppercase mb-2 text-sm">Kontakt</h2>
+                    <h3 class="text-4xl font-heading font-bold text-white mb-8">Kom i kontakt med oss</h3>
+                    <p class="text-slate-300 mb-10 text-lg">
+                        Har du frågor om transport, logistik eller behöver boka service? Tveka inte att höra av dig.
+                    </p>
+                    
+                    <div class="space-y-8">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-white/10 rounded flex items-center justify-center flex-shrink-0 text-vm-accent text-xl">
+                                📞
+                            </div>
+                            <div>
+                                <h4 class="font-heading font-bold text-lg mb-1">Telefon</h4>
+                                <p class="text-slate-300">Växel: <a href="tel:014292000" class="text-white hover:text-vm-accent transition-colors">0142 92000</a></p>
+                                <p class="text-slate-300">Jour: <a href="tel:014280002" class="text-white hover:text-vm-accent transition-colors">0142 80 002</a></p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-white/10 rounded flex items-center justify-center flex-shrink-0 text-vm-accent text-xl">
+                                ✉️
+                            </div>
+                            <div>
+                                <h4 class="font-heading font-bold text-lg mb-1">E-post</h4>
+                                <a href="mailto:kontakt@vm-ab.se" class="text-slate-300 hover:text-vm-accent transition-colors">kontakt@vm-ab.se</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-white/10 rounded flex items-center justify-center flex-shrink-0 text-vm-accent text-xl">
+                                📍
+                            </div>
+                            <div>
+                                <h4 class="font-heading font-bold text-lg mb-1">Adresser</h4>
+                                <div class="grid sm:grid-cols-2 gap-4">
+                                    <div>
+                                        <span class="block text-xs text-vm-accent uppercase tracking-wider mb-1">Besöksadress</span>
+                                        <p class="text-slate-300">Idrottsvägen 5<br>596 34 Skänninge</p>
+                                    </div>
+                                    <div>
+                                        <span class="block text-xs text-vm-accent uppercase tracking-wider mb-1">Postadress</span>
+                                        <p class="text-slate-300">Murgatan 6<br>596 34 Skänninge</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white text-slate-800 p-8 rounded-lg shadow-2xl">
+                    <h4 class="font-heading font-bold text-2xl mb-6 text-vm-blue">Öppettider</h4>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center border-b border-slate-100 pb-2">
+                            <span class="font-medium text-slate-600">Måndag - Fredag</span>
+                            <span class="font-bold text-vm-blue">07:00 - 16:00</span>
+                        </div>
+                        <div class="flex justify-between items-center border-b border-slate-100 pb-2">
+                            <span class="font-medium text-slate-600">Lunchstängt</span>
+                            <span class="font-bold text-vm-blue">12:00 - 13:00</span>
+                        </div>
+                        <div class="flex justify-between items-center pb-2 opacity-50">
+                            <span class="font-medium text-slate-600">Lördag - Söndag</span>
+                            <span class="font-bold text-vm-blue">Stängt</span>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 bg-vm-light p-4 rounded border-l-4 border-vm-accent">
+                        <p class="text-sm text-slate-600">
+                            Behöver du hjälp utanför ordinarie öppettider? Kontakta vårt journummer vid akuta ärenden.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-vm-dark text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-vm-accent rounded flex items-center justify-center font-heading font-bold text-vm-blue text-sm">VM</div>
+                <span class="font-heading font-bold text-white tracking-wider uppercase">Vagn & Maskin</span>
+            </div>
+            <p class="text-sm">© 2025 Vagn & Maskin i Norden AB. Alla rättigheter förbehållna.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
