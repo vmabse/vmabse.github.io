@@ -30,4 +30,4 @@ vmabse.github.io/
 
 - **Telefon:** 0142 92000
 - **E-post:** kontakt@vm-ab.se
-- **Adress:** Idrottsvägen 5, 596 34 Skänninge
+- **Adress:** Murgatan 6, 596 34 Skänninge
